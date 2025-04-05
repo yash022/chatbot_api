@@ -6,7 +6,7 @@ API_URL = "https://api.together.xyz/v1/chat/completions"
 
 def chat_with_gpt(prompt):
     headers = {
-        "Authorization": f"Bearer {API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
 
