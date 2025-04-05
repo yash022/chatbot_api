@@ -1,12 +1,11 @@
 from flask import Flask, jsonify 
-import os
 import requests
-api_key = os.environ.get("API_KEY")
+API_KEY = "88a1069d6468d3f7827919e0bb483e75ed87268ebaa6ea556dea8a7150db12a1"
 API_URL = "https://api.together.xyz/v1/chat/completions"
 
 def chat_with_gpt(prompt):
     headers = {
-        "Authorization": f"Bearer {api_key}",
+        "Authorization": f"Bearer {API_KEY}",
         "Content-Type": "application/json"
     }
 
